@@ -1,0 +1,42 @@
+.Tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+.Tweetbox > form {
+    display: flex;
+    flex-direction: column; /*flexes column wise, by default flex is row-wise as we saw with sidebar & feed */
+}
+.tweetBox_input {
+    padding: 20px;
+    display: flex;
+}
+.tweetBox_imageInput {
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tweetBox_input > input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+input[type=text]:focus {
+    outline: none;
+}
+
+.tweetBox__tweetButton {
+    background-color: var(--twitter-color) !important; /* important overrides mat_UI css*/
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important; /*get rid of capitals, and inherit normal text from parent*/
+    border-radius: 30px !important;
+    width: 80px;
+    height: 40px !important;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+}

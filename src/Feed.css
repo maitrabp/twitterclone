@@ -1,0 +1,28 @@
+.Feed {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content; /*whatever the content is, it must fit*/
+    overflow-y: scroll; /*if it flows over the window, make a scrollbar*/
+}
+/*Hides Scrollbar for chrome, safari, and opera*/
+.Feed::-webkit-scrollbar {
+    display: none
+}
+/*Hides Scrollbar for IE, Edge, Firefox*/
+.Feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.feed_header {
+    position: sticky; /*sticks to the top with top set to 0*/
+    top: 0;
+    background-color: white;
+    z-index: 100; /*no matter what, show this ON TOP, Z index is used for overlapping*/ 
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px; /*15px left-right, 20px top-bottom*/
+}
+.feed_header > h2 {
+    font-size: 20px;
+    font-size: 800;
+}
